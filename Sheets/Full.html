@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Volleyball Stats Buttons</title>
+    <style>
+        .button-grid-wrapper {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: aqua;
+        }
+        .button-row-outer {
+            justify-content: center;
+            width: 90vw;
+            background-color: greenyellow;
+        }
+        .button-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .stat-button {
+            flex: 1;
+            padding: 12px 0;
+            font-size: 6vw;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #f5f5f5;
+            transition: background 0.2s;
+        }
+        .stat-button-labels {
+            flex: 1;
+            padding: 12px 0;
+            font-size: 8vw;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: bold;
+        }
+        .stat-button:hover {
+            background: #e0e0e0;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: 90vw;
+            height: 20vh;
+            justify-self: center;
+            background-color: lightblue;
+            gap: 10px;
+        }
+        .menu-grid > div, .menu-grid > div > button {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            font-size: 5vw;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-grid-wrapper">
+        <div class="button-row-outer">
+            <div class="button-row">
+                <button class="stat-button">Success</button>
+                <span class="stat-button-labels">Serve</span>
+                <button class="stat-button">Error</button>
+            </div>
+            <div class="button-row">
+                <button class="stat-button">Continuation</button>
+                
+                <button class="stat-button">Disadvantage</button>
+            </div>
+        </div>
+        <div class="button-row-outer">
+            <div class="button-row">
+                <button class="stat-button">Success</button>
+                <span class="stat-button-labels">Attack</span>
+                <button class="stat-button">Error</button>
+            </div>
+            <div class="button-row">
+                <button class="stat-button">Continuation</button>
+                <button class="stat-button">Disadvantage</button>
+            </div>
+        </div>
+        <div class="button-row-outer">
+            <div class="button-row">
+                <button class="stat-button">Success</button>
+                <span class="stat-button-labels">Pass</span>
+                <button class="stat-button">Error</button>
+            </div>
+            <div class="button-row">
+                <button class="stat-button">Continuation</button>
+                <button class="stat-button">Disadvantage</button>
+            </div>
+        </div>
+        <div class="button-row-outer">
+            <div class="button-row">
+                <button class="stat-button">Success</button>
+                <span class="stat-button-labels">Defence</span>
+                <button class="stat-button">Error</button>
+            </div>
+            <div class="button-row">
+                <button class="stat-button">Continuation</button>
+                <button class="stat-button">Disadvantage</button>
+            </div>
+        </div>
+        <div class="button-row-outer">
+            <div class="button-row">
+                <button class="stat-button">Success</button>
+                <span class="stat-button-labels">Set</span>
+                <button class="stat-button">Error</button>
+            </div>
+            <div class="button-row">
+                <button class="stat-button">Continuation</button>
+                <button class="stat-button">Disadvantage</button>
+            </div>
+        </div>
+        <div class="button-row-outer">
+            <div class="button-row">
+                <button class="stat-button">Success</button>
+                <span class="stat-button-labels">Block</span>
+                <button class="stat-button">Error</button>
+            </div>
+            <div class="button-row">
+                <button class="stat-button">Continuation</button>
+                <button class="stat-button">Disadvantage</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu-grid">
+        <div class="player-p4"><button class="menu-button">4</button></div>
+        <div class="player-p3"><button class="menu-button">3</button></div>
+        <div class="player-p2"><button class="menu-button">2</button></div>
+        <div class="current-player-text">Current Player:</div>
+
+        <div class="player-p5"><button class="menu-button">5</button></div>
+        <div class="player-p6"><button class="menu-button">6</button></div>
+        <div class="player-p1"><button class="menu-button">1</button></div>
+        <div class="current-player-number">##</div>
+
+        <div class="sub-libero"><button class="menu-button">sub / libero</button></div>
+    </div>
+</body>
+</html>
